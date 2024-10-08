@@ -18,6 +18,7 @@ header {
     color: #FFFFFF; /* Cor da nossa fonte */
     padding: 0 2rem; /* espaçamento interno */
     height: 4.8rem; /* Altura do nosso header */
+    width: 100%;
     display: grid; 
     align-items: center; /* Alinhando tudo ao center */
 }
@@ -101,4 +102,42 @@ header {
 
 .img-button-header {
     width: 1.3rem;
+}
+
+@media screen and (max-width: 921px) {
+    .box-logo a {
+        font-size: 1.4rem;
+    }
+
+    .menu-list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    header {
+        padding: 0;
+    }
+
+    .box-logo a {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    .container-header {
+        padding: 0.2rem;
+    }
+
+    .box-logo a {
+        font-size: 0.9rem;
+    }
+
+    .img-logo {
+        width: 2.9rem;
+    }
+
+    .button-header {
+        gap: 0.2rem;
+    }
 }
