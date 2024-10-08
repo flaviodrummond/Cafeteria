@@ -1,3 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Caso precisar clicar em um botão que desca nossa tela para um outra seção, faça essa transição de forma suave */
+}
+
+body {
+    overflow-x: hidden; /* O conteúdo ficará do tamnaho da tela, impedindo que tenha aquela barra de scroll em baixo da tela para rolagem */
+}
+
+header {
+    background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6); /* Este parâmetro faz com que comece um tom de cor mais forte do lado direito */
+    color: #FFFFFF; /* Cor da nossa fonte */
+    padding: 0 2rem; /* espaçamento interno */
+    height: 4.8rem; /* Altura do nosso header */
+    display: grid; 
+    align-items: center; /* Alinhando tudo ao center */
+}
+
+.container-header {
+    padding: 0.5rem 1rem; /* Espaçamento interno */
+    display: flex; /* Colocar os itens ao lado */
+    justify-content: space-between; /* Afastar os itens de lado oposto da tela */
+    align-items: center; /* Alinhar ao centro */
+}
+
+.box-logo {
+    display: flex;
+    margin: 0 10px;
+}
+
+.box-logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    letter-spacing: 0.05rem;
+    padding: 0 20px 5px 0;
+}
+
+.img-logo {
+    width: 4.0rem;
+    border-radius: 50%;   
+}
+
+.box-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 5px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row; /* Colocar um ao lado do outro */
+    list-style-type: none; /* Tirar aquela bolinha que tem na lista */
+    gap: 2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffffb3;
+    display: inline-block;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.menu-link:hover {
+    color: #FFFFFF;
+    transition-duration: 500ms;
+}
+
 .button-header {
-    background-color: aquamarine;
+    background-color: #784438;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 1rem;
+    color: #FFFFFF;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.button-header:hover {
+    transform: scale(1.05); /* Faz com que o button tenha aquele movimento de cresce e diminuir quando colocamos o mouse em cima */
+    transition-duration: 200ms; /* O tempo de trasição que a gente quer que ele faça esse movimento, tornando algo mais suave */
+    cursor: pointer;
+}
+
+.img-button-header {
+    width: 1.3rem;
 }
