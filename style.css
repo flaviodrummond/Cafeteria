@@ -104,6 +104,75 @@ header {
     width: 1.3rem;
 }
 
+main {
+    min-height: 600px;
+    padding: 0 50px;
+    background-color: #ffffffb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #270c03;
+}
+
+.container-main {
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /* Criou duas colunas iguais e dividiu a o texto em uma e a imagem em outra */
+    align-items: center; /* Centralizou nossa imagem */
+    text-align: center; /* Centralizou nosso texto */
+}
+
+.text-h1 {
+    text-align: start;
+    
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.button-main {
+    background: linear-gradient(to right, #854d3d, #4a1e1b); /* Faz um degrade no nosso button */
+    border: 2px solid #854d3d;
+    margin: 10px 0 0 30px;
+    padding: 10px 15px; /* Espaçamento dentro do nosso button */
+    border-radius: 9999px; /* Nosso button ficar com a borda redonda */
+    color: #FFFFFF; /* Cor da nossa fonte dentro do button */
+    text-align: center; /* Centralizar nosso texto */
+    display: inline-block; 
+    transition: transform 0.2s ease-in-out; /* Que nossa transição demore 2 segundos e seja de dentro pra fora */
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05); /* Criando a estilização do button dentro da nossa class */
+    }
+}
+
+.img-main {
+    width: 550px;
+    transform: scale(1.25);
+    animation: balanco 8s linear infinite; /* Criando nossa animação da imagem */
+}
+
+@keyframes balanco { /* Nossa animação */
+    0% {
+        transform: rotate(0deg); /* Começando nossa animação */
+    }
+
+    50% {
+        transform: rotate(15deg); /* No meio da nossa animação, fazer o giro */
+    }
+
+    100% {
+        transform: rotate(0deg); /* Fim da nossa animação, retornando a posição inicial */
+    }
+}
+
 @media screen and (max-width: 921px) {
     .box-logo a {
         font-size: 1.4rem;
