@@ -173,6 +173,94 @@ h1 {
     }
 }
 
+.container-section {
+    padding: 2.5rem 3rem;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.box-section {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 0 3rem;
+    border: 2px solid #270c03;
+}
+
+.tittle-h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #4a1e1b ;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    place-items: center;
+}
+
+.blur-card {
+    box-shadow: 0 0.25rem 1rem rgb(0, 0, 0);
+    border-radius: 1rem;
+    background-color: #854d3d;
+    transition: all 0.5s ease;
+    width: 300px;
+    position: relative;
+    color: #FFFFFF;
+}
+
+.blur-card:hover {
+    background: #FFFFFF;
+    color: #270c03;
+}
+
+.img-card {
+    height: 122px;
+}
+
+.img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-3.5rem);
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.blur-card:hover .img{
+    transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
+}
+
+.cappucino-frozen {
+    width: 200px;
+    height: 160px;
+}
+
+.tittle-h3 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.text-h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.text-p {
+    color: #6b7280;
+    line-height: 1.25rem;
+    font-size: 0.88rem;
+    text-align: center;
+    transition: all 0.7s ease;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
 @media screen and (max-width: 921px) {
     .box-logo a {
         font-size: 1.4rem;
