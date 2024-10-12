@@ -210,7 +210,7 @@ h1 {
 }
 
 .blur-card:hover {
-    background: #FFFFFF;
+    background: #BC9E79;
     color: #270c03;
 }
 
@@ -248,9 +248,10 @@ h1 {
 }
 
 .text-p {
-    color: #6b7280;
+    color: #ffffff;
     line-height: 1.25rem;
-    font-size: 0.88rem;
+    font-size: 0.90rem;
+    font-weight: 500;
     text-align: center;
     transition: all 0.7s ease;
     margin-bottom: 1rem;
@@ -258,6 +259,10 @@ h1 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+}
+
+.blur-card:hover .text-p {
+    color: #000000;
 }
 
 
