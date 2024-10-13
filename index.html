@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Cafeteria</title>
 </head>
@@ -39,7 +40,8 @@
         </div>
     </header>
     <main>
-        <div class="container-main">
+        <div class="container-main" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
             <div class="grid">
                 <div class="text-h1">
                     <h1> Venha saborear o melhor <span>Café</span> Capixaba. </h1>
@@ -48,17 +50,17 @@
                     </div>
                 </div>
                 <div>
-                    <img src="img/coffe-1.png" alt="xícara com café" class="img-main">
+                    <img src="img/image-Photoroom (1).png" alt="xícara com café" class="img-main">
                 </div>
             </div>
         </div>
     </main>
     <section class="container-section">
-        <div class="box-section">
+        <div class="box-section" data-aos="zoom-in">
             <h2 class="tittle-h2">O <span>Café</span> feito para você.</h2>
         </div>
         <div class="card">
-            <div class="blur-card">
+            <div class="blur-card" data-aos="fade-up" data-aos-delay="350">
                 <div class="img-card">
                     <img class="cappucino-frozen img" src="./img/cappucino-frozen.png" alt="cappucino">
                 </div>
@@ -66,11 +68,12 @@
                     <h3 class="text-h3">
                         Cappucino Gelato
                     </h3>
-                    <p class="text-p">Venha saborear sfdsllKVLK  DLSKANFKLNDLF MLKLDFJk</p>
+                    <p class="text-p">Venha saborear sfdsllKVLK DLSKANFKLNDLF MLKLDFJk</p>
                 </div>
             </div>
 
-            <div class="blur-card">
+            <div class="blur-card" data-aos="fade-up" data-aos-delay="200"
+            data-aos-anchor-placement="center-bottom">
                 <div class="img-card">
                     <img class="cafe-especial img" src="./img/image-Photoroom (2).png" alt="cappucino">
                 </div>
@@ -82,9 +85,9 @@
                 </div>
             </div>
 
-            <div class="blur-card">
+            <div class="blur-card" data-aos="fade-up" data-aos-delay="500">
                 <div class="img-card">
-                    <img class="cappucino img"  src="./img/image-Photoroom (3).png" alt="cappucino">
+                    <img class="cappucino img" src="./img/image-Photoroom (3).png" alt="cappucino">
                 </div>
                 <div class="tittle-h3">
                     <h3 class="text-h3">
@@ -96,6 +99,13 @@
         </div>
 
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+      </script>
 </body>
 
 </html>
