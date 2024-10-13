@@ -1,41 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto Slab", serif;
 }
 
 html {
-    scroll-behavior: smooth; /* Caso precisar clicar em um botão que desca nossa tela para um outra seção, faça essa transição de forma suave */
+    scroll-behavior: smooth;
+    /* Caso precisar clicar em um botão que desca nossa tela para um outra seção, faça essa transição de forma suave */
 }
 
 body {
-    overflow-x: hidden; /* O conteúdo ficará do tamnaho da tela, impedindo que tenha aquela barra de scroll em baixo da tela para rolagem */
+    overflow-x: hidden;
+    /* O conteúdo ficará do tamnaho da tela, impedindo que tenha aquela barra de scroll em baixo da tela para rolagem */
 }
 
 header {
-    background-image: linear-gradient(to right, #4a1e1b, #4a1e1be6); /* Este parâmetro faz com que comece um tom de cor mais forte do lado direito */
-    color: #FFFFFF; /* Cor da nossa fonte */
-    padding: 0 2rem; /* espaçamento interno */
-    height: 4.8rem; /* Altura do nosso header */
+    background-image: linear-gradient(to right, #4a1e1b, #985A3E);
+    /* Este parâmetro faz com que comece um tom de cor mais forte do lado direito */
+    color: #FFFFFF;
+    /* Cor da nossa fonte */
+    padding: 0 2rem;
+    /* espaçamento interno */
+    height: 4.8rem;
+    /* Altura do nosso header */
     width: 100%;
-    display: grid; 
-    align-items: center; /* Alinhando tudo ao center */
+    display: grid;
+    align-items: center;
+    /* Alinhando tudo ao center */
 }
 
 .container-header {
-    padding: 0.5rem 1rem; /* Espaçamento interno */
-    display: flex; /* Colocar os itens ao lado */
-    justify-content: space-between; /* Afastar os itens de lado oposto da tela */
-    align-items: center; /* Alinhar ao centro */
-}
-
-.box-logo {
+    padding: 0.5rem 1rem;
+    /* Espaçamento interno */
     display: flex;
-    margin: 0 10px;
+    /* Colocar os itens ao lado */
+    justify-content: space-between;
+    /* Afastar os itens de lado oposto da tela */
+    align-items: center;
+    /* Alinhar ao centro */
 }
 
-.box-logo a {
+.box-logo p {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 700;
@@ -44,14 +50,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     letter-spacing: 0.05rem;
     padding: 0 20px 5px 0;
 }
 
 .img-logo {
     width: 4.0rem;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
 
 .box-list {
@@ -64,39 +70,44 @@ header {
 
 .menu-list {
     display: flex;
-    flex-direction: row; /* Colocar um ao lado do outro */
-    list-style-type: none; /* Tirar aquela bolinha que tem na lista */
-    gap: 2rem;
+    flex-direction: row;
+    /* Colocar um ao lado do outro */
+    list-style-type: none;
+    /* Tirar aquela bolinha que tem na lista */
+    gap: 1.8rem;
 }
 
 .menu-link {
     text-decoration: none;
-    color: #ffffffb3;
+    color: #ffffff;
     display: inline-block;
-    font-size: 1.25rem;
+    font-size: 1.45rem;
     line-height: 1.75rem;
 }
 
 .menu-link:hover {
-    color: #FFFFFF;
+    transition-duration: 200ms;
     transition-duration: 500ms;
+    transform: scale(1.08);
 }
 
 .button-header {
-    background-color: #784438;
-    border: none;
+    background-color: #8F461F;
     border-radius: 20px;
+    border: 3px solid #cc9374;
     padding: 5px 1rem;
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: center;
     gap: 0.5rem;
 }
 
 .button-header:hover {
-    transform: scale(1.05); /* Faz com que o button tenha aquele movimento de cresce e diminuir quando colocamos o mouse em cima */
-    transition-duration: 200ms; /* O tempo de trasição que a gente quer que ele faça esse movimento, tornando algo mais suave */
+    transform: scale(1.05);
+    /* Faz com que o button tenha aquele movimento de cresce e diminuir quando colocamos o mouse em cima */
+    transition-duration: 200ms;
+    /* O tempo de trasição que a gente quer que ele faça esse movimento, tornando algo mais suave */
     cursor: pointer;
 }
 
@@ -105,9 +116,13 @@ header {
 }
 
 main {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 600px;
     padding: 0 50px;
- 
+
 }
 
 .container-main {
@@ -117,64 +132,78 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr); /* Criou duas colunas iguais e dividiu a o texto em uma e a imagem em outra */
-    align-items: center; /* Centralizou nossa imagem */
-    text-align: center; /* Centralizou nosso texto */
-}
-
-.text-h1 {
-    text-align: start;
-    
+    grid-template-columns: repeat(2, 1fr);
+    /* Criou duas colunas iguais e dividiu a o texto em uma e a imagem em outra */
+    align-items: center;
+    /* Centralizou nossa imagem */
+    text-align: center;
+    /* Centralizou nosso texto */
 }
 
 h1 {
     font-size: 4rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 span {
-    color: #8F461F;
+    color: #9E5524;
+    font-family: "Yatra One", system-ui;
 }
 
 .button-main {
-    background: linear-gradient(to right, #854d3d, #4a1e1b); /* Faz um degrade no nosso button */
+    background: linear-gradient(to right, #854d3d, #4a1e1b);
+    /* Faz um degrade no nosso button */
+    font-size: 1rem;
     border: 2px solid #854d3d;
     margin-top: 10px;
-    padding: 10px 15px; /* Espaçamento dentro do nosso button */
-    border-radius: 9999px; /* Nosso button ficar com a borda redonda */
-    color: #FFFFFF; /* Cor da nossa fonte dentro do button */
-    text-align: center; /* Centralizar nosso texto */
-    display: inline-block; 
-    transition: transform 0.2s ease-in-out; /* Que nossa transição demore 2 segundos e seja de dentro pra fora */
+    padding: 10px 15px;
+    /* Espaçamento dentro do nosso button */
+    border-radius: 9999px;
+    /* Nosso button ficar com a borda redonda */
+    color: #FFFFFF;
+    /* Cor da nossa fonte dentro do button */
+    text-align: center;
+    /* Centralizar nosso texto */
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    /* Que nossa transição demore 2 segundos e seja de dentro pra fora */
     cursor: pointer;
 
     &:hover {
-        transform: scale(1.05); /* Criando a estilização do button dentro da nossa class */
+        transform: scale(1.05);
+        /* Criando a estilização do button dentro da nossa class */
     }
 }
 
 .img-main {
-    width: 650px;
+    width: 500px;
     transform: scale(1.25);
-    animation: balanco 8s linear infinite; /* Criando nossa animação da imagem */
+    animation: balanco 8s linear infinite;
+    /* Criando nossa animação da imagem */
 }
 
-@keyframes balanco { /* Nossa animação */
+@keyframes balanco {
+
+    /* Nossa animação */
     0% {
-        transform: rotate(0deg); /* Começando nossa animação */
+        transform: rotate(0deg);
+        /* Começando nossa animação */
     }
 
     50% {
-        transform: rotate(15deg); /* No meio da nossa animação, fazer o giro */
+        transform: rotate(15deg);
+        /* No meio da nossa animação, fazer o giro */
     }
 
     100% {
-        transform: rotate(0deg); /* Fim da nossa animação, retornando a posição inicial */
+        transform: rotate(0deg);
+        /* Fim da nossa animação, retornando a posição inicial */
     }
 }
 
 .container-section {
-    padding: 2.5rem 3rem;
+    padding: 0.5rem 1.5rem;
     margin: 0 auto;
     min-height: 600px;
 }
@@ -190,7 +219,7 @@ span {
 .tittle-h2 {
     font-size: 2.8rem;
     font-weight: 700;
-    color: #270c03 ;
+    color: #270c03;
 }
 
 .card {
@@ -211,7 +240,7 @@ span {
 }
 
 .blur-card:hover {
-    background: #BC9E79;
+    background: #E8C372;
     color: #270c03;
 }
 
@@ -227,7 +256,7 @@ span {
     transition: transform 0.3s ease, scale 0.3s ease;
 }
 
-.blur-card:hover .img{
+.blur-card:hover .img {
     transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
 }
 
@@ -262,7 +291,7 @@ span {
     color: #ffffff;
     line-height: 1.25rem;
     font-size: 0.90rem;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     transition: all 0.7s ease;
     margin-bottom: 1rem;
@@ -283,6 +312,20 @@ footer {
     padding: 1rem;
 }
 
+footer p {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: 0.05rem;
+    padding: 0 20px 5px 0;
+}
+
 .container-footer {
     display: flex;
     justify-content: center;
@@ -296,19 +339,21 @@ footer {
 }
 
 .footer-p {
-    color: #cc9374;
+    color: #E8C372;
     font-weight: 400;
+    font-size: 1rem;
+    gap: 0.4rem;
 }
 
-.dev {
+.footer-p .linkedin {
     color: #FFFFFF;
     font-size: 1rem;
-    font-weight: 600;
+    text-decoration: none;
 }
 
 
-@media screen and (max-width: 947px) {
-    .box-logo a {
+@media screen and (max-width: 1040px) {
+    .box-logo p {
         font-size: 1.4rem;
     }
 
@@ -322,22 +367,30 @@ footer {
 }
 
 @media screen and (max-width: 541px) {
-    header {
-        padding: 0;
+
+    .box-logo p {
+        font-size: 1rem;
     }
 
-    .box-logo a {
-        font-size: 1.3rem;
+    footer {
+        padding: 0.5rem;
+    }
+
+    .footer-p {
+        font-size: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .footer-p .linkedin {
+        font-size: 0.5rem;
     }
 }
 
 @media screen and (max-width: 461px) {
     .container-header {
         padding: 0.2rem;
-    }
-
-    .box-logo a {
-        font-size: 0.9rem;
     }
 
     .img-logo {
@@ -347,11 +400,15 @@ footer {
     .button-header {
         gap: 0.2rem;
     }
+    
+    footer p {
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 1251px){
+@media screen and (max-width: 1251px) {
     h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .img-main {
@@ -359,7 +416,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1026px){
+@media screen and (max-width: 1026px) {
     h1 {
         font-size: 3.2rem;
     }
@@ -369,7 +426,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 975px){
+@media screen and (max-width: 975px) {
     main {
         min-height: 550px;
     }
@@ -390,9 +447,26 @@ footer {
     .img-main {
         width: 380px;
     }
+
+    .img-footer {
+        width: 2.3rem;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .footer-p {
+        font-size: 0.8rem;
+    }
+
+    .footer-p .linkedin {
+        font-size: 0.8rem;
+    }
 }
 
-@media screen and (max-width: 595px){
+@media screen and (max-width: 595px) {
     h1 {
         font-size: 1.8rem;
     }
@@ -402,25 +476,48 @@ footer {
     }
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 920px) {
     .card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3.5rem;
     }
+
+    .container-footer {
+        margin-top: 1.5rem;
+    }
 }
 
-@media screen and (max-width: 683px){
+@media screen and (max-width: 683px) {
+    header {
+        padding: 0;
+    }
+
     .card {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 3.5rem;
     }
+
+    .button-header {
+        padding: 5px 10px;
+        font-size: 1rem;
+        border: 2px solid #cc9374;
+    }
 }
 
-@media screen and (max-width: 483px){
+@media screen and (max-width: 483px) {
     .tittle-h2 {
         font-size: 2.3rem;
     }
 }
 
+@media screen and (max-width: 655px) {
+    .footer-p {
+        font-size: 0.6rem;
+    }
+
+    .footer-p .linkedin {
+        font-size: 0.6rem;
+    }
+}
