@@ -277,6 +277,35 @@ span {
     font-weight: 600;
 }
 
+footer {
+    background-color: #461708;
+    min-height: 120px;
+    padding: 1rem;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-footer {
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.footer-p {
+    color: #cc9374;
+    font-weight: 400;
+}
+
+.dev {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 
 @media screen and (max-width: 947px) {
     .box-logo a {
