@@ -3,7 +3,7 @@
 <br>
 <p>Bem-vindo ao projeto da <b>Cafeteria Café & Código </b>, uma página web simples e elegante, desenvolvida com as tecnologias HTML e CSS e com a responsividade para todos os dispositivos movéis.</p>
 
-<img>
+<img src="https://github.com/flaviodrummond/Cafeteria/blob/master/img/Mockup.png">
 
 <h2 align="left"><b>📋 Funcionalidades </b></h2><br><br>
 
